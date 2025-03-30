@@ -74,4 +74,4 @@ The project is built using:
 
 ## License
 
-MIT 
+MIT  
