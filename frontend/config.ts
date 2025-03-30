@@ -1,26 +1,4 @@
-/* 
-Deploy & Verify Updated Smart Contract:
----------------------------------------
-1. Run: forge build
-
-2. Set .env with PRIVATE_KEY, SEPOLIA_RPC_URL, ETHERSCAN_API_KEY
-
-3. Run:
-
-forge script script/Deploy.s.sol \
-  --rpc-url $SEPOLIA_RPC_URL \
-  --private-key $PRIVATE_KEY \
-  --broadcast \
-  --verify \
-  --etherscan-api-key $ETHERSCAN_API_KEY
-
-4. Copy deployed contract address and update CONTRACT_ADDRESS below
-
-5. Restart frontend using `yarn dev`
-*/
-
-// Contract address will be updated after deployment
-export const CONTRACT_ADDRESS = "0x884D9173b59C29EAB67c035604b9198DA3a9FfaB";
+export const CONTRACT_ADDRESS = '0x820228309522f3eB39A3700b9Bc42ac3f3f66571';
 
 export const CONTRACT_ABI = [
   {
