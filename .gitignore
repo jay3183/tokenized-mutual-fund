@@ -1,0 +1,27 @@
+# dependencies
+node_modules
+frontend/node_modules
+
+# build outputs
+out/
+cache/
+broadcast/
+frontend/build/
+dist/
+
+# env + secret files
+.env
+.env.local
+.env.*.local
+
+# Foundry + Hardhat cache
+foundry.toml
+artifacts/
+typechain/
+coverage/
+coverage.json
+
+# system files
+.DS_Store
+yarn.lock
+frontend/yarn.lock 

@@ -1,84 +1,76 @@
 # Tokenized Mutual Fund Application
 
-A decentralized application (dApp) for managing a tokenized mutual fund on the Ethereum blockchain.
+A decentralized application (dApp) that enables users to invest in and manage a tokenized mutual fund on the Ethereum blockchain. This project demonstrates how traditional mutual funds can be represented as tokens on the blockchain, enabling instant transactions, transparent auditing, and seamless integration with Web3 technologies.
+
+## Contract Details
+
+- **Contract Address (Sepolia)**: `0x884D9173b59C29EAB67c035604b9198DA3a9FfaB`
+- **Token Symbol**: FTF (Franklin Templeton Fund)
+- **Token Standard**: ERC-20
 
 ## Features
 
-- Mint fund shares by sending ETH
-- Redeem fund shares for ETH
-- View current NAV (Net Asset Value) per share
-- Admin functionality to update NAV (for contract owner only)
+- **Tokenized Shares**: FTF tokens represent shares in the mutual fund, with value directly tied to the NAV
+- **Instant Minting**: Send ETH to mint fund shares automatically based on current NAV
+- **Seamless Redemption**: Redeem fund shares for ETH at any time
+- **NAV Updates**: Fund manager (contract owner) can update the Net Asset Value
+- **Price Feed Integration**: Uses Chainlink ETH/USD price feed for real-time pricing data
+- **Emergency Recovery**: Protected functions for handling unexpected situations
 
-## Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
-- MetaMask or another Web3 wallet
-- Hardhat (for smart contract development)
-
-## Setup
+## Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/yourusername/tokenized-mutual-fund-app.git
 cd tokenized-mutual-fund-app
 ```
 
-2. Install dependencies:
+2. Install and run the frontend:
 ```bash
-npm install
+cd frontend
+yarn install
+yarn dev
 ```
 
-3. Create a `.env` file in the root directory with the following variables:
-```
-INFURA_API_KEY=your_infura_api_key
-PRIVATE_KEY=your_private_key
-```
+## Technical Architecture
 
-4. Deploy the smart contract:
-```bash
-npx hardhat run scripts/deploy.js --network <network-name>
-```
+The application consists of:
 
-5. Update the contract address in `src/utils/config.js`
+1. **Smart Contract**: Written in Solidity, using OpenZeppelin libraries for security and standardization
+2. **Frontend**: React/TypeScript with Tailwind CSS for styling
+3. **Web3 Integration**: Uses Wagmi/Viem for blockchain interaction
 
-6. Start the development server:
-```bash
-npm start
-```
+## Security Features
 
-## Usage
+- **Pausable**: Contract can be paused in emergencies
+- **Reentrancy Guard**: Protection against reentrancy attacks
+- **Access Control**: Owner-only functions for administrative tasks
+- **Emergency Recovery**: Functions to recover assets in case of issues
 
-1. Connect your Web3 wallet (MetaMask recommended)
-2. To mint shares:
-   - Enter the amount of ETH you want to invest
-   - Click "Mint Shares"
-3. To redeem shares:
-   - Enter the number of shares you want to redeem
-   - Click "Redeem Shares"
-4. To update NAV (admin only):
-   - Enter the new NAV value in ETH
-   - Click "Update NAV"
+## Chainlink Integration
+
+The application uses Chainlink's ETH/USD price feed on Sepolia (`0x694AA1769357215DE4FAC081bf1f309aDC325306`) to provide real-time price data. This enables:
+
+- Accurate NAV calculation
+- Real-time market prices in the UI
+- Automated price-based actions
+
+## FTF Tokens
+
+FTF tokens represent shares in the Franklin Templeton Fund. Each token:
+- Is priced according to the current NAV (Net Asset Value)
+- Can be minted by investing ETH
+- Can be redeemed for ETH at the current NAV
+- Represents fractional ownership in the fund's assets
 
 ## Development
 
-- Smart contracts are located in `src/contracts/`
-- Frontend components are in `src/components/`
-- Contract configuration is in `src/utils/config.js`
-
-## Testing
-
-Run the test suite:
-```bash
-npm test
-```
-
-## Security Considerations
-
-- The contract uses OpenZeppelin's SafeMath for arithmetic operations
-- Owner-only functions are protected by the Ownable modifier
-- All user inputs are validated
-- Contract balance checks are implemented for redemptions
+The project is built using:
+- **Foundry**: For smart contract development and testing
+- **Vite**: For frontend development
+- **Wagmi/Viem**: For Web3 interactions
+- **Tailwind CSS**: For styling
+- **Ethers.js**: For alternative Ethereum interactions
 
 ## License
 
