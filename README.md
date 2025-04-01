@@ -76,10 +76,10 @@ FTF tokens represent shares in the Franklin Templeton Fund. Each token:
 ## 📸 Screenshots
 
 ### Landing Page
-![Landing Page](./assets/landingpage.png)
+![Landing Page](frontend/public/readme-assets/landing-page.png)
 
 ### Dashboard View
-![Dashboard](./assets/dashboard.png)
+![Dashboard View](frontend/public/readme-assets/dashboard-view.jpeg)
 
 ---
 
