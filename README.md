@@ -8,6 +8,14 @@ A decentralized application (dApp) that enables users to invest in and manage a 
 - **Token Symbol**: FTF (Franklin Templeton Fund)
 - **Token Standard**: ERC-20
 
+## 📸 Screenshots
+
+### Landing Page
+![Landing Page](frontend/public/readme-assets/landing-page.png)
+
+### Dashboard View
+![Dashboard View](frontend/public/readme-assets/dashboard-view.jpeg)
+
 ## Features
 
 - **Tokenized Shares**: FTF tokens represent shares in the mutual fund, with value directly tied to the NAV
@@ -71,15 +79,6 @@ FTF tokens represent shares in the Franklin Templeton Fund. Each token:
 - **Wagmi/Viem**: For Web3 interactions
 - **Tailwind CSS**: For styling
 - **Ethers.js**: For additional Ethereum utilities
-
----
-## 📸 Screenshots
-
-### Landing Page
-![Landing Page](frontend/public/readme-assets/landing-page.png)
-
-### Dashboard View
-![Dashboard View](frontend/public/readme-assets/dashboard-view.jpeg)
 
 ---
 
