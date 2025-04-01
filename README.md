@@ -73,6 +73,15 @@ FTF tokens represent shares in the Franklin Templeton Fund. Each token:
 - **Ethers.js**: For additional Ethereum utilities
 
 ---
+## 📸 Screenshots
+
+### Landing Page
+![Landing Page](./assets/landingpage.png)
+
+### Dashboard View
+![Dashboard](./assets/dashboard.png)
+
+---
 
 ##  Compliance Note
 
