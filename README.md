@@ -8,6 +8,13 @@ A decentralized application (dApp) that enables users to invest in and manage a 
 - **Token Symbol**: FTF (Franklin Templeton Fund)
 - **Token Standard**: ERC-20
 
+##  Video Walkthrough 
+
+[![Watch the Demo](https://img.youtube.com/vi/RMFwqRRux6M/hqdefault.jpg)](https://youtu.be/RMFwqRRux6M)
+
+🎥 **Click the image above to watch the full walkthrough on YouTube**
+
+
 ##  Screenshots
 
 ### Landing Page
